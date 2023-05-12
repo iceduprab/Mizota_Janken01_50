@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    p {
+      font-size: 60px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 50px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+   </style>
+  <title>じゃんけん</title>
+</head>
+
+<body>
+  <p>じゃんけん</p>
+
+  <div class="buttons">
+    <button class="button-1" onclick="
+    const randomNumber = Math.random();
+
+    let computerMove = '';
+
+    if (randomNumber >= 0 && randomNumber < 1 / 3){
+       computerMove = 'グー';
+    } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+       computerMove = 'パー';
+    } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+       computerMove = 'チョキ';
+    }
+
+    let result = '';
+
+    if (computerMove === 'グー') {
+      result = 'あいこです。';
+    } else if (computerMove === 'パー') {
+      result = 'あなたの負けです。'
+    } else if (computerMove === 'チョキ') {
+      result = 'あなたの勝ちです。';
+    }
+
+    alert(`あなたはグーを出しました。パソコンは${computerMove}を出しました。${result}`);
+  ">グー</button>
+
+  <button class="button-2" onclick="
+    const randomNumber = Math.random();
+
+    let computerMove = '';
+
+    if (randomNumber >= 0 && randomNumber < 1 / 3){
+      computerMove = 'グー';
+    } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+      computerMove = 'パー';
+    } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+      computerMove = 'チョキ';
+    }
+
+    let result = '';
+
+    if (computerMove === 'グー') {
+      result = 'あなたの勝ちです。';
+    } else if (computerMove === 'パー') {
+      result = 'あいこです。'
+    } else if (computerMove === 'チョキ') {
+      result = 'あなたの負けです。';
+    }
+
+    alert(`あなたはパーを出しました。パソコンは${computerMove}を出しました。${result}`);
+  ">パー</button>
+
+  <button class="button-3" onclick="
+    const randomNumber = Math.random();
+
+    let computerMove = '';
+
+    if (randomNumber >= 0 && randomNumber < 1 / 3){
+      computerMove = 'グー';
+    } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+      computerMove = 'パー';
+    } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+      computerMove = 'チョキ';
+    }
+
+    let result = '';
+
+    if (computerMove === 'グー') {
+      result = 'あなたの負けです。';
+    } else if (computerMove === 'パー') {
+      result = 'あなたの勝ちです。'
+    } else if (computerMove === 'チョキ') {
+      result = 'あいこです。';
+    }
+
+    alert(`あなたはチョキを出しました。パソコンは${computerMove}を出しました。${result}`);
+  ">チョキ</button>
+  </div>
+  <script>
+    
+  </script>
+  
+</body>
+</html>
